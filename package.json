@@ -2,7 +2,7 @@
   "private": true,
   "name": "opportfolio",
   "version": "1.2.0",
-  "homepage": "http://hrishi.tech/",
+  "homepage": "http://soundharya.tech/",
   "scripts": {
     "build": "react-scripts build",
     "predeploy": "npm run build",
@@ -14,7 +14,7 @@
   "dependencies": {
     "baseui": "^12.2.0",
     "glamor": "^2.20.40",
-    "react": "^16.8.0",
+    "react": "^16.14.0",
     "react-bootstrap": "^2.6.0",
     "react-cursor-custom": "^1.2.4",
     "react-dom": "^16.8.0",

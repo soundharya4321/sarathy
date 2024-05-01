@@ -10,22 +10,21 @@ const settings = {
 //Home Page
 const greeting = {
   title: "Hello.",
-  title2: "Hrishi",
-  logo_name: "hrishi.p()",
-  nickname: "hrishi1999 / picleric",
-  full_name: "Hrishi Patel",
-  subTitle:
-    "Full Stack Developer, Machine Learning Enthusiast. Always learning.",
+  title2: "Soundharya",
+  logo_name: "soundharya.p()",
+  nickname: "soundharya0106 / picleric",
+  full_name: "SOUNDHARYA",
+  subTitle: "Full Stack Developer,Devops Engineer,Always learning.",
   resumeLink:
-    "https://drive.google.com/file/d/1kcvW8P65jWZFeKR6Jopf3nrQLA1qJCwn/view?usp=sharing",
-  mail: "mailto:hrishipatel99@gmail.com",
+    "https://drive.google.com/file/d/1ETBaIuDgac9scvUOuzT8LHkiUzAdd_pw/view?usp=drivesdk",
+  mail: "soundharyaparthasarathy1@gmail.com@gmail.com",
 };
 
 const socialMediaLinks = {
   /* Your Social Media Link */
-  github: "https://github.com/hrishi1999",
-  linkedin: "https://www.linkedin.com/in/hrishi-patel-ba8476140/",
-  gmail: "hrishipatel99@gmail.com",
+  github: "https://github.com/soundharya4321/my_portfolio.git",
+  linkedin: "www.linkedin.com/in/soundharya-p-76279625b",
+  gmail: "soundharyaparthasarathy1@gmail.com",
   gitlab: " ",
   facebook: " ",
   twitter: "https://twitter.com/hrishi_55",
