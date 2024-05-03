@@ -1,23 +1,25 @@
-# Use the official Node.js image as base
-FROM node:14-alpine as build
+# Base image with Node.js
+FROM node:16 as build-stage
 
 # Set the working directory in the container
-WORKDIR /sarathy
+WORKDIR /app
 
-# Copy package.json and package-lock.json (if available) to the container
-COPY package*.json ./
-
-# Install dependencies
+# Copy package.json and install dependencies
+COPY package.json package-lock.json ./
 RUN npm install
 
-# Copy the entire application to the container
+# Copy the rest of the project
 COPY . .
 
-# Build the React app   
+# Build the project
 RUN npm run build
 
-# Expose port 3000 for the Node.js server (optional, depending on your setup)
-EXPOSE 3000
+# Use a lightweight web server to serve the built React app
+FROM nginx:stable
 
-# Command to run the React app
-CMD ["npm", "start"]
+# Copy the built files to the nginx public folder
+COPY --from=build-stage /app/build /usr/share/nginx/html
+
+# Expose port 80 and start nginx
+EXPOSE 80
+CMD ["nginx", "-g", "daemon off;"]
